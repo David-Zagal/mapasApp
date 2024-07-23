@@ -1,0 +1,9 @@
+@if (!isUserLocationReady) {
+	<maps-loading /> <!--*ngIf="!isUserLocationReady; else mapReady"-->
+} @else {
+	<maps-map-view />
+	<maps-btn-my-location />
+	<maps-search-bar />
+
+	<maps-angular-logo />
+}
